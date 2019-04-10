@@ -17,6 +17,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,MyStartedService.class);
         intent.putExtra("Check","Show this message via service");
         startService(intent);
+        
+        //to stop service just create a intent and call stopService method 
+        
+        /*
+        
+        Intnet intent = new Intent(MainActivity.this,MyStartedService.class);
+        stopService(intent);
+        
+        */
     }
 }
 
